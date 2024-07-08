@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Calculadora hecha con JS</h1>
+    <div class="calculadora">
+      <h2>CMM Design</h2>
+      <input class="visor" type="text" id="pantalla" readonly />
+      <br />
+      <input type="button" value="1" onclick="imprime('1')" />
+      <input type="button" value="2" onclick="imprime('2')" />
+      <input type="button" value="3" onclick="imprime('3')" />
+      <input type="button" value="+" onclick="imprime('+')" />
+      <br />
+      <input type="button" value="4" onclick="imprime('4')" />
+      <input type="button" value="5" onclick="imprime('5')" />
+      <input type="button" value="6" onclick="imprime('6')" />
+      <input type="button" value="-" onclick="imprime('-')" />
+      <br />
+      <input type="button" value="7" onclick="imprime('7')" />
+      <input type="button" value="8" onclick="imprime('8')" />
+      <input type="button" value="9" onclick="imprime('9')" />
+      <input type="button" value="*" onclick="imprime('*')" />
+      <br />
+      <input type="button" value="." onclick="imprime('.')" />
+      <input type="button" value="0" onclick="imprime('0')" />
+      <input class="igual" type="button" value="=" onclick="calcula('')" />
+      <input type="button" value="/" onclick="imprime('/')" />
+      <br />
+      <input class="borrar" type="button" value="Clear" onclick="borrar('')" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

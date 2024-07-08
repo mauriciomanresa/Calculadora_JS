@@ -1,0 +1,132 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-image: url("./calculos.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  color: rgb(27, 24, 24);
+  text-shadow: 0 0 20px rgba(255, 255, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(218, 247, 58);
+}
+
+.visor {
+  background-color: rgb(246, 247, 212);
+}
+
+.calculadora {
+  width: 400px;
+  margin-top: 16px;
+  background-color: grey;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+#pantalla {
+  padding: 10px;
+  font-size: 30px;
+  margin-bottom: 16px;
+  text-align: right;
+  border: 3px solid rgb(81, 67, 67);
+  width: 92%;
+  box-sizing: border-box;
+}
+
+input[type="button"] {
+  width: 80px;
+  height: 50px;
+  margin: 5px;
+  font-size: 25px;
+  background-color: #553f3f;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  color: antiquewhite;
+  font-weight: 545;
+}
+
+.igual {
+  background-color: yellowgreen !important;
+  color: black;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(133, 111, 111);
+  border-color: rgb(213, 242, 50);
+}
+
+input[type="button"]:last-child {
+  margin-right: 0;
+}
+
+input[type="button"].igual:hover {
+  background-color: rgb(246, 51, 93) !important;
+  border-color: black !important;
+}
+
+.borrar {
+  width: 90% !important;
+  box-sizing: border-box;
+}
+
+input[type="button"].borrar:hover {
+  background-color: rgb(233, 245, 167);
+  border-color: rgb(20, 20, 20);
+  color: rgb(20, 20, 20);
+}
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+  .calculadora {
+    width: 300px;
+    padding: 15px;
+  }
+
+  input[type="button"] {
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  #pantalla {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculadora {
+    width: 100%;
+    padding: 10px;
+  }
+
+  input[type="button"] {
+    width: 50px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  #pantalla {
+    font-size: 16px;
+    width: 250px;
+  }
+
+  .borrar {
+    width: 250px !important;
+  }
+}
